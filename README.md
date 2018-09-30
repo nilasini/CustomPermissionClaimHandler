@@ -45,3 +45,7 @@ Parse the retrieved id token then sample JSON would be as follows :-
   "nonce": "qwdqdq",
   "iat": 1532210945
 }
+
+Refer \[1] for implementation details
+
+\[1] https://medium.com/@nilasini/retrieve-service-provider-wise-custom-permissions-as-a-claim-in-id-token-785a94ff5793
