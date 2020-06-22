@@ -7,7 +7,12 @@ Note:- In order to retrive application's role's permission through id token, you
 
 2. Build the project and copy the JAR file org.wso2.permission.claim.handler-1.0.jar to the <IS_HOME>/repository/components/dropins directory.
 
-3. Change the <ClaimHandler> property of application-authentication.xml file located inside <IS_HOME>/repository/conf/identity directory, with the custom hanlder's fully qualified name (for this example org.wso2.custom.claim.PermissionClaimHandler).
+3. If you are using IS version below IS-5.9.0 then change the <ClaimHandler> property of application-authentication.xml file located inside <IS_HOME>/repository/conf/identity directory, with the custom hanlder's fully qualified name (for this example org.wso2.custom.claim.PermissionClaimHandler).
+   
+   If you are using IS version higher or equl to IS-5.9.0 then please add the following config to deployment.toml file
+[authentication.framework.extensions]
+
+claim_handler="com.wso2.sample.claim.handler.CustomClaimHandler"
 
 4. Check the above Note and Start the server
 
