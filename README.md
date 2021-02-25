@@ -11,8 +11,10 @@ Note:- In order to retrive application's role's permission through id token, you
    
    If you are using IS version higher or equal to IS-5.9.0 then please add the following config to deployment.toml file
    
+   ```
    [authentication.framework.extensions] 
-   claim_handler="com.wso2.sample.claim.handler.CustomClaimHandler" 
+   claim_handler="org.wso2.custom.claim.PermissionClaimHandler" 
+   ```
 
 4. Check the above Note and Start the server
 
